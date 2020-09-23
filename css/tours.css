@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #30bdbd;
+}
+
+main {
+  padding-top: 60px;
+}
+
+main #landing {
+  height: calc(100vh - 60px);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#30bdbd), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(to bottom, #30bdbd, rgba(0, 0, 0, 0.5));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #landing h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.2rem;
+}
+
+footer span {
+  display: block;
+}
+/*# sourceMappingURL=tours.css.map */

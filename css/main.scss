@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body,html{
+    height: 100%;
+}
+html{
+    font-size: calc(1em + 1vw);
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    user-select: none;
+}
+
+// Colors
+$themeColor: #30bdbd; 
+
+// viewports
+$tablets: 692px;
+$desktop: 836px;
+
+@mixin mobile {
+    @media (max-width: #{$tablets}){
+        @content;
+    }
+}
+@mixin tablets {
+    @media (min-width: #{$tablets}){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $themeColor;
+}
+
+main{
+
+    padding: 60px 0 0 0;
+    h2{
+        color: $themeColor;
+        width: fit-content;
+    }
+    p{
+        font-size: .8rem;
+    }
+    section{
+        padding: 1rem;
+        .horizontal-scroll-container{
+            display: flex;
+            flex-wrap: nowrap;
+            height: 10rem;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            &::-webkit-scrollbar{
+                display:none;
+            }
+            .horizontal-scroll-item{
+                flex: 0 0 auto;
+                height: 100%;
+                width: 10rem;
+                background-color: $themeColor;
+                margin-right: 1rem;
+                border-radius: .8rem;
+            }                
+        }
+    }
+    // Landing section
+    #landing{
+        height: calc(100vh - 60px);
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,.5),rgba(0,0,0,1)), url('../assets/road.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        h2{
+            font-size: 2.5rem;
+        }
+        p{
+            color: #fff;
+        }
+    }
+    #about, #tours, #destinations, #team, #contact{
+        text-align: center;
+        h2{            
+            margin: 1rem auto;
+            position: relative;
+            &::before{
+                position: absolute;
+                width: 60%;
+                height: 3px;
+                content: '';
+                bottom: -.2rem;
+                border-radius: 2rem;
+                left: 20%;
+                background-color: $themeColor;
+            }
+        }
+        .view-all{
+            text-align: right;
+            margin: .5rem 0;
+        }
+    }
+    #about{
+
+    }
+    #tours{
+        .btn{
+            display: flex;
+            justify-content: flex-start;
+            padding: .3rem .8rem;
+            button{
+                font-size: .8rem;
+                margin: .4rem 0;
+                color: $themeColor;
+                border-radius: 2rem;
+                border: transparent;
+                padding: .4rem 1rem;
+            }
+        }
+        
+    }
+    #destinations{
+        .btn{
+            display: flex;
+            justify-content: flex-start;
+            padding: .4rem .8rem;
+            button{
+                font-size: .8rem;
+                margin: .4rem 0;
+                color: $themeColor;
+                border-radius: 2rem;
+                border: transparent;
+                padding: .2rem 1rem;
+            }
+        }
+    }
+    #team{
+        .team-container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .team-member{
+                width: 50%;
+                flex: 0 0 auto;
+                text-align: center;
+                margin: .5rem 0;
+                .img{
+                    margin: 0 auto;
+                    width: 84px;
+                    height: 84px;
+                    background-color: $themeColor;
+                    border-radius: 50%;
+                    border: 2px solid $themeColor;
+                }
+                span{
+                    display: block;
+                    font-size: 1rem;
+                }
+                .role{
+                    font-size: .7rem;
+                    color: #555;
+                }
+            }
+        }
+    }
+    #contact{
+        text-align: left;
+        form{
+            display: flex;
+            flex-direction: column;
+            input{
+                margin: .5rem 0;
+                padding: .5rem;
+                border-radius: .2rem;
+                font-size: .8rem;
+            }
+            #message{
+                height: 5rem;
+                word-wrap: normal;
+            }
+            input[type="submit"]{
+                background-color: $themeColor;
+                border: transparent;
+                color: #fff;
+                font-size: inherit;
+                width: 50%;
+            }
+        }
+    }
+}
+footer{
+    text-align: center;
+    padding: 1.2rem 1rem;
+    img{
+        width: 60%;
+        margin-bottom: 1.2rem;
+    }
+    .social-links{
+        img{
+            width: 25px;
+            margin: 0 .2rem 1.2rem;
+        }
+    }
+    span{
+        font-size: .6rem;
+        display: block;
+        line-height: 1.5;
+    }
+}
