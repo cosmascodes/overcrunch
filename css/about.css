@@ -140,10 +140,12 @@ main #offices .contact-wrapper aside {
 main #offices .contact-wrapper aside dl dt {
   color: #30bdbd;
   margin-bottom: .2rem;
+  font-size: .8rem;
 }
 
 main #offices .contact-wrapper aside dl dd {
   margin-bottom: 1rem;
+  font-size: .6rem;
 }
 
 main #offices .contact-wrapper img {
