@@ -44,7 +44,7 @@ main section .horizontal-scroll-container {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  height: 15rem;
+  height: 12rem;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -59,27 +59,28 @@ main section .horizontal-scroll-container .horizontal-scroll-item {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   height: 100%;
-  width: 15rem;
+  width: 12rem;
   border: 1px solid #30bdbd;
   margin-right: 1rem;
   border-radius: .8rem;
-  padding: 1rem;
+  padding: .4rem;
 }
 
 main section .horizontal-scroll-container .horizontal-scroll-item .img {
-  width: 84px;
-  height: 84px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   background-color: #30bdbd;
-  margin: .5rem auto;
+  margin: .1rem auto;
 }
 
 main section .horizontal-scroll-container .horizontal-scroll-item p {
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 main section .horizontal-scroll-container .horizontal-scroll-item span {
   color: #30bdbd;
+  font-size: .6rem;
 }
 
 main h2 {
