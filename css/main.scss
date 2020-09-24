@@ -117,6 +117,19 @@ main{
         }
     }
     #about{
+        .btn{
+            display: flex;
+            justify-content: flex-start;
+            padding: .4rem .8rem;
+            button{
+                font-size: .8rem;
+                margin: .4rem 0;
+                color: $themeColor;
+                border-radius: 2rem;
+                border: transparent;
+                padding: .4rem 1rem;
+            }
+        }
 
     }
     #tours{
@@ -151,6 +164,9 @@ main{
         }
     }
     #team{
+        p{
+            margin-bottom: 1rem;
+        }
         .team-container{
             display: flex;
             justify-content: space-around;
@@ -170,7 +186,7 @@ main{
                 }
                 span{
                     display: block;
-                    font-size: 1rem;
+                    font-size: .8rem;
                 }
                 .role{
                     font-size: .7rem;
@@ -188,7 +204,9 @@ main{
                 margin: .5rem 0;
                 padding: .5rem;
                 border-radius: .2rem;
-                font-size: .8rem;
+                font-size: .6rem;
+                border: 1px solid #444;
+                outline: none;
             }
             #message{
                 height: 5rem;

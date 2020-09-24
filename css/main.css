@@ -125,6 +125,25 @@ main #about .view-all, main #tours .view-all, main #destinations .view-all, main
   margin: .5rem 0;
 }
 
+main #about .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: .4rem .8rem;
+}
+
+main #about .btn button {
+  font-size: .8rem;
+  margin: .4rem 0;
+  color: #30bdbd;
+  border-radius: 2rem;
+  border: transparent;
+  padding: .4rem 1rem;
+}
+
 main #tours .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,6 +182,10 @@ main #destinations .btn button {
   padding: .4rem 1rem;
 }
 
+main #team p {
+  margin-bottom: 1rem;
+}
+
 main #team .team-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,7 +216,7 @@ main #team .team-container .team-member .img {
 
 main #team .team-container .team-member span {
   display: block;
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 main #team .team-container .team-member .role {
@@ -219,7 +242,9 @@ main #contact form input {
   margin: .5rem 0;
   padding: .5rem;
   border-radius: .2rem;
-  font-size: .8rem;
+  font-size: .6rem;
+  border: 1px solid #444;
+  outline: none;
 }
 
 main #contact form #message {

@@ -31,7 +31,7 @@ main {
 }
 
 main #landing {
-  height: calc(70vh - 60px);
+  height: 70vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#30bdbd), to(rgba(0, 0, 0, 0.5)));
   background-image: linear-gradient(to bottom, #30bdbd, rgba(0, 0, 0, 0.5));
   display: -webkit-box;
@@ -41,29 +41,18 @@ main #landing {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  color: #fff;
 }
 
 main #landing h2 {
-  color: #fff;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
-main #intro {
-  padding: 1.2rem;
-  text-align: center;
-}
-
-main #intro h2 {
-  color: #30bdbd;
-}
-
-main #intro p {
+main #landing p {
   font-size: .8rem;
 }
 
@@ -72,9 +61,14 @@ footer {
   padding: 1.2rem 1rem;
 }
 
+footer .social-links img {
+  width: 25px;
+  margin: 0 .2rem 1.2rem;
+}
+
 footer span {
-  display: block;
   font-size: .6rem;
+  display: block;
   line-height: 1.5;
 }
-/*# sourceMappingURL=tours.css.map */
+/*# sourceMappingURL=shop.css.map */

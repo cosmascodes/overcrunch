@@ -31,7 +31,7 @@ main {
 }
 
 main #landing {
-  height: calc(100vh - 60px);
+  height: calc(70vh - 60px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,9 +50,44 @@ main #landing h2 {
   color: #fff;
 }
 
+main #intro {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+main #intro h2 {
+  color: #30bdbd;
+  margin-bottom: .5rem;
+}
+
+main #intro p {
+  font-size: .8rem;
+}
+
 footer {
   text-align: center;
   padding: 1.2rem 1rem;
+}
+
+footer img {
+  width: 60px;
+  border: 1.5px solid #30bdbd;
+  border-radius: 50%;
+  padding: .2rem;
+  margin-bottom: 1.2rem;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+
+footer img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform .3s ease-in;
+  transition: -webkit-transform .3s ease-in;
+  transition: transform .3s ease-in;
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
 }
 
 footer span {

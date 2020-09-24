@@ -48,22 +48,15 @@ a{
 main{
     padding-top: 60px;
     #landing{
-        height: calc(70vh - 60px);
-        background-image: linear-gradient(to bottom, $themeColor,rgba(0,0,0,.5));
+        height: 70vh;
+        background-image: linear-gradient(to bottom, $themeColor, rgba(0,0,0,.5));
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h2{
-            color: #fff;
-            font-size: 2rem;
-        }
-    }
-    #intro{
-        padding: 1.2rem;
         text-align: center;
+        justify-content: center;
+        color: #fff;
         h2{
-            color: $themeColor;
+            font-size: 2.5rem;
         }
         p{
             font-size: .8rem;
@@ -74,9 +67,15 @@ main{
 footer{
     text-align: center;
     padding: 1.2rem 1rem;
+    .social-links{
+        img{
+            width: 25px;
+            margin: 0 .2rem 1.2rem;
+        }
+    }
     span{
-        display: block;
         font-size: .6rem;
+        display: block;
         line-height: 1.5;
     }
 }

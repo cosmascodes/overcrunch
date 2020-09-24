@@ -104,9 +104,24 @@ main h3 span {
 }
 
 main #landing {
-  height: calc(100vh - 60px);
+  height: calc(70vh - 60px);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#30bdbd), to(rgba(0, 0, 0, 0.5)));
   background-image: linear-gradient(to bottom, #30bdbd, rgba(0, 0, 0, 0.5));
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #landing div {
+  height: 40%;
+}
+
+main #landing div p {
+  font-size: 2rem;
 }
 
 main #intro article p {
