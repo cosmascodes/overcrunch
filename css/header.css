@@ -202,7 +202,10 @@ header nav ul li, header nav ul a {
     transition: transform .2s ease-out;
     transition: transform .2s ease-out, -webkit-transform .2s ease-out;
   }
-  header nav ul li:hover::before, header nav ul a:hover::before {
+}
+
+@media (min-width: 692px) {
+  header nav ul li li:hover::before, header nav ul a li:hover::before {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
     -webkit-transition: -webkit-transform .2s ease-in .1s;
