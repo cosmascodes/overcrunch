@@ -136,6 +136,8 @@ main #about h2::before, main #tours h2::before, main #destinations h2::before, m
   main #about h2::before, main #tours h2::before, main #destinations h2::before, main #team h2::before, main #contact h2::before {
     left: 0;
     top: 0;
+    -webkit-transform-origin: left;
+            transform-origin: left;
     -webkit-transform: scale(0, 1);
             transform: scale(0, 1);
     -webkit-transition: -webkit-transform .3s ease-out;
@@ -145,7 +147,7 @@ main #about h2::before, main #tours h2::before, main #destinations h2::before, m
   }
 }
 
-main #about h2::before:hover, main #tours h2::before:hover, main #destinations h2::before:hover, main #team h2::before:hover, main #contact h2::before:hover {
+main #about h2:hover::before, main #tours h2:hover::before, main #destinations h2:hover::before, main #team h2:hover::before, main #contact h2:hover::before {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
   -webkit-transition: -webkit-transform .3s ease-in;
@@ -162,7 +164,13 @@ main #about h2::before:hover, main #tours h2::before:hover, main #destinations h
 
 main #about .view-all, main #tours .view-all, main #destinations .view-all, main #team .view-all, main #contact .view-all {
   text-align: right;
-  margin: .5rem 0;
+  margin: 0;
+}
+
+@media (min-width: 692px) {
+  main #about {
+    padding: .5rem 1rem;
+  }
 }
 
 main #about .btn {

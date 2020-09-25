@@ -120,10 +120,13 @@ main{
                 @include tablets {
                     left: 0;
                     top: 0;
+                    transform-origin: left;
                     transform: scale(0,1);
                     transition: transform .3s ease-out;
                 }
-                &:hover{
+            }
+            &:hover{
+                &::before{
                     transform: scale(1,1);
                     transition: transform .3s ease-in;
                 }
@@ -134,10 +137,13 @@ main{
         }
         .view-all{
             text-align: right;
-            margin: .5rem 0;
+            margin: 0;
         }
     }
     #about{
+        @include tablets {
+            padding: .5rem 1rem;
+        }
         .btn{
             display: flex;
             justify-content: flex-start;
