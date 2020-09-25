@@ -144,8 +144,8 @@ main #catalog .tourist h3, main #catalog .basics h3 {
 main #catalog .basic-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(8rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  -ms-grid-columns: (minmax(6rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
 }
 
 main #catalog .basic-container .item {
