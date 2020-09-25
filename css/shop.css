@@ -151,16 +151,44 @@ main #catalog .basic-container {
 main #catalog .basic-container .item {
   height: 6rem;
   margin: .2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-main #catalog .basic-container .hoodie {
+main #catalog .basic-container .item .image {
+  -webkit-box-flex: .7;
+      -ms-flex: .7;
+          flex: .7;
+}
+
+main #catalog .basic-container .item .price {
+  -webkit-box-flex: .3;
+      -ms-flex: .3;
+          flex: .3;
+}
+
+main #catalog .basic-container .item .price span {
+  font-size: .8rem;
+}
+
+main #catalog .basic-container .item .price p {
+  font-size: .6rem;
+  color: #777;
+}
+
+main #catalog .basic-container .item .hoodie {
   background-image: url("../assets/smartmockups_kfhqf6oo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-main #catalog .basic-container .mask {
+main #catalog .basic-container .item .mask {
   background-image: url("../assets/smartmockups_kfhqhpxr.png");
   background-size: contain;
   background-repeat: no-repeat;

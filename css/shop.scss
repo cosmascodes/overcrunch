@@ -130,18 +130,33 @@ main{
             .item{
                 height: 6rem;
                 margin: .2rem;
-            }
-            .hoodie{
-                background-image: url('../assets/smartmockups_kfhqf6oo.png');
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-            .mask{
-                background-image: url('../assets/smartmockups_kfhqhpxr.png');
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
+                display: flex;
+                flex-direction: column;
+                .image{
+                    flex: .7;
+                }
+                .price{
+                    flex: .3;
+                    span{
+                        font-size: .8rem;
+                    }
+                    p{
+                        font-size: .6rem;
+                        color: #777;
+                    }
+                }
+                .hoodie{
+                    background-image: url('../assets/smartmockups_kfhqf6oo.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .mask{
+                    background-image: url('../assets/smartmockups_kfhqhpxr.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
             }
         }
     }
