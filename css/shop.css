@@ -161,15 +161,15 @@ main #catalog .basic-container .item {
 }
 
 main #catalog .basic-container .item .image {
-  -webkit-box-flex: .7;
-      -ms-flex: .7;
-          flex: .7;
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
 }
 
 main #catalog .basic-container .item .price {
-  -webkit-box-flex: .3;
-      -ms-flex: .3;
-          flex: .3;
+  -webkit-box-flex: .2;
+      -ms-flex: .2;
+          flex: .2;
 }
 
 main #catalog .basic-container .item .price span {
