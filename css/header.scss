@@ -52,6 +52,9 @@ header{
     position: fixed;
     background-color: #fff;
     transition: background .3s ease-in;
+    @include tablets {
+        box-shadow: 0 0 25px -9px #ddd;
+    }
     img{
         height: 30%;
         @include tablets {

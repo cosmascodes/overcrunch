@@ -67,6 +67,10 @@ main{
             &::-webkit-scrollbar{
                 display:none;
             }
+                @include tablets {
+                   flex-wrap: wrap;
+                   justify-content: space-evenly;
+                }
             .horizontal-scroll-item{
                 flex: 0 0 auto;
                 height: 100%;
@@ -74,6 +78,27 @@ main{
                 background-color: $themeColor;
                 margin-right: 1rem;
                 border-radius: .8rem;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                .tour-image{
+                    flex: .82;
+                }
+                .tour-details{
+                    flex: .18;
+                    background: #2b7c7c;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: .5rem;
+                    color: #fff;
+                }
+                    @include tablets {   
+                        width: 8rem;                 
+                        height: 8rem;
+                        border-radius: .2rem;
+                        margin: .2rem;
+                    }
             }                
         }
     }
@@ -157,7 +182,7 @@ main{
                 border: transparent;
                 padding: .4rem 1rem;
                 @include tablets {
-                    border-radius: .4rem;
+                    border-radius: .2rem;
                 }
             }
         }
@@ -182,11 +207,10 @@ main{
                 border: transparent;
                 padding: .4rem 1rem;
                 @include tablets {
-                    border-radius: .4rem;
+                    border-radius: .2rem;
                 }
             }
         }
-        
     }
     #destinations{
         .btn{
@@ -204,7 +228,7 @@ main{
                 border: transparent;
                 padding: .4rem 1rem;
                 @include tablets {
-                    border-radius: .4rem;
+                    border-radius: .2rem;
                 }
             }
         }

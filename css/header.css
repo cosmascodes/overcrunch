@@ -41,6 +41,13 @@ header {
   transition: background .3s ease-in;
 }
 
+@media (min-width: 692px) {
+  header {
+    -webkit-box-shadow: 0 0 25px -9px #ddd;
+            box-shadow: 0 0 25px -9px #ddd;
+  }
+}
+
 header img {
   height: 30%;
 }
