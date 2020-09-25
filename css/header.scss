@@ -54,6 +54,9 @@ header{
     transition: background .3s ease-in;
     img{
         height: 30%;
+        @include tablets {
+            height: 50%;
+        }
     }
     #menu-trigger{
         display: none;
