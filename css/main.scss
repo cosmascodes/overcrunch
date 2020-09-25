@@ -104,6 +104,7 @@ main{
         text-align: center;
         @include tablets {
             text-align: left;
+            padding: auto 2rem;
         }
         h2{            
             margin: 1rem auto;

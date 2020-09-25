@@ -113,6 +113,7 @@ main #about, main #tours, main #destinations, main #team, main #contact {
 @media (min-width: 692px) {
   main #about, main #tours, main #destinations, main #team, main #contact {
     text-align: left;
+    padding: auto 2rem;
   }
 }
 
