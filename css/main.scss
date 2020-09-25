@@ -94,6 +94,9 @@ main{
         p{
             color: #fff;
         }
+        @include tablets {
+            height: calc(70vh - 60px);
+        }
     }
     #about, #tours, #destinations, #team, #contact{
         text-align: center;

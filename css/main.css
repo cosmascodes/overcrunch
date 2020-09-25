@@ -100,6 +100,12 @@ main #landing p {
   color: #fff;
 }
 
+@media (min-width: 692px) {
+  main #landing {
+    height: calc(70vh - 60px);
+  }
+}
+
 main #about, main #tours, main #destinations, main #team, main #contact {
   text-align: center;
 }
