@@ -115,12 +115,12 @@ main #landing div {
   height: 40%;
 }
 
-main #landing div h2 {
-  line-height: .8rem;
-}
-
 main #landing div p {
   font-size: 2rem;
+}
+
+main #landing div p span {
+  line-height: 1;
 }
 
 main #intro article p {

@@ -110,11 +110,11 @@ main{
         padding-top: 10%;
         div{
             height: 40%;
-            h2{
-                line-height: .8rem;
-            }
             p{
                 font-size: 2rem;
+                span{
+                    line-height: 1;
+                }
             }
         }
     }

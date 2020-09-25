@@ -21,21 +21,10 @@ html {
           user-select: none;
 }
 
-a {
-  text-decoration: none;
-  color: #30bdbd;
-}
-
 header {
-  background: #fff;
-  -webkit-box-shadow: 0 0 25px -7px #ddd;
-          box-shadow: 0 0 25px -7px #ddd;
   height: 60px;
   width: 100%;
-  position: fixed;
   z-index: 100;
-  top: 0;
-  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,11 +34,15 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 1rem;
+  padding: 0 1.2em;
+  position: fixed;
+  background-color: #fff;
+  -webkit-transition: background .3s ease-in;
+  transition: background .3s ease-in;
 }
 
 header img {
-  width: 30%;
+  height: 30%;
 }
 
 header #menu-trigger {
@@ -62,19 +55,10 @@ header #menu-trigger:checked ~ nav {
   transition: width .3s ease-in;
 }
 
-header #menu-trigger:checked ~ nav ul a {
-  color: #222;
-}
-
 header #menu-trigger:checked ~ nav ul li {
   opacity: 1;
   -webkit-transition: opacity .2s ease-in .3s;
   transition: opacity .2s ease-in .3s;
-}
-
-header #menu-trigger:checked ~ nav ul .active {
-  background-color: #30bdbd;
-  color: #fff;
 }
 
 header #menu-trigger:checked ~ .menu-trigger-label:not(.class) span::after {
@@ -92,6 +76,7 @@ header #menu-trigger:checked ~ .menu-trigger-label span {
 }
 
 header #menu-trigger:checked ~ .menu-trigger-label span::after {
+  background-color: #30bdbd;
   width: 24px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -102,6 +87,7 @@ header #menu-trigger:checked ~ .menu-trigger-label span::after {
 }
 
 header #menu-trigger:checked ~ .menu-trigger-label span::before {
+  background-color: #30bdbd;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transition: -webkit-transform .3s ease-in;
@@ -143,7 +129,7 @@ header nav {
 header nav ul {
   height: 100%;
   right: 0;
-  color: #fff;
+  color: #30bdbd;
   overflow-y: auto;
 }
 
@@ -168,25 +154,24 @@ header nav ul::-webkit-scrollbar {
   display: none;
 }
 
-header nav ul li {
+header nav ul li, header nav ul a {
   cursor: pointer;
   -webkit-transition: opacity .1s ease-out;
   transition: opacity .1s ease-out;
 }
 
 @media (max-width: 692px) {
-  header nav ul li {
+  header nav ul li, header nav ul a {
     padding: 1rem 1.2em;
     opacity: 0;
   }
-  header nav ul li:hover {
+  header nav ul li:hover, header nav ul a:hover {
     background-color: #30bdbd;
-    color: #fff;
   }
 }
 
 @media (min-width: 692px) {
-  header nav ul li {
+  header nav ul li, header nav ul a {
     font-size: .5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -201,13 +186,13 @@ header nav ul li {
     padding: 0 .2rem;
     position: relative;
   }
-  header nav ul li::before {
+  header nav ul li::before, header nav ul a::before {
     top: 0;
     position: absolute;
     content: '';
     height: 3px;
     width: 100%;
-    background-color: #fff;
+    background-color: #30bdbd;
     -webkit-transform-origin: left;
             transform-origin: left;
     -webkit-transform: scale(0, 1);
@@ -217,7 +202,7 @@ header nav ul li {
     transition: transform .2s ease-out;
     transition: transform .2s ease-out, -webkit-transform .2s ease-out;
   }
-  header nav ul li:hover::before {
+  header nav ul li:hover::before, header nav ul a:hover::before {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
     -webkit-transition: -webkit-transform .2s ease-in .1s;
@@ -228,21 +213,26 @@ header nav ul li {
 }
 
 header .menu-trigger-label {
-  z-index: 999;
   cursor: pointer;
+  height: 100%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 692px) {
+  header .menu-trigger-label {
+    display: none;
+  }
 }
 
 header .menu-trigger-label span {
