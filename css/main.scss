@@ -88,14 +88,16 @@ main{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
+            @include tablets {
+                height: calc(70vh - 60px);
+            }
+
         h2{
             font-size: 2.5rem;
         }
         p{
             color: #fff;
-        }
-        @include tablets {
-            height: calc(70vh - 60px);
         }
     }
     #about, #tours, #destinations, #team, #contact{
