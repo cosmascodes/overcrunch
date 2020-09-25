@@ -136,6 +136,11 @@ header{
                 justify-content: center;
                 align-items: center;
                 }
+                li{
+                    @include tablets {
+                        height: 100%;
+                    }
+                }
             }
             li{
                 @include mobile {                  

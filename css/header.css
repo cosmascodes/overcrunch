@@ -169,6 +169,12 @@ header nav ul::-webkit-scrollbar {
   }
 }
 
+@media (min-width: 692px) {
+  header nav ul a li {
+    height: 100%;
+  }
+}
+
 header nav ul li {
   cursor: pointer;
   -webkit-transition: opacity .1s ease-out;
