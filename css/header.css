@@ -204,11 +204,10 @@ header nav ul li, header nav ul a {
   }
 }
 
-header nav ul li li, header nav ul a li {
-  height: 100%;
-}
-
 @media (min-width: 692px) {
+  header nav ul li li, header nav ul a li {
+    height: 100%;
+  }
   header nav ul li li:hover::before, header nav ul a li:hover::before {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);

@@ -158,8 +158,8 @@ header{
                     }
                 }
                 li{
+                    @include tablets {                        
                     height: 100%;
-                    @include tablets {
                         &:hover{
                             &::before{
                                 transform: scale(1,1);
