@@ -157,7 +157,7 @@ header{
                         transition: transform .2s ease-out;
                     }
                 }
-                li{
+                a{
                     @include tablets {
                         &:hover{
                             &::before{
