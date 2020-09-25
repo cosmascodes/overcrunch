@@ -30,6 +30,77 @@ main {
   padding-top: 60px;
 }
 
+main .horizontal-scroll-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 12rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+main .horizontal-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+main .horizontal-scroll-container .horizontal-scroll-item {
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  height: 100%;
+  width: 12rem;
+  border: 1px solid #30bdbd;
+  margin-right: 1rem;
+  border-radius: .8rem;
+  padding: .4rem;
+}
+
+main .horizontal-scroll-container .horizontal-scroll-item .img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #30bdbd;
+  margin: .1rem auto;
+}
+
+main .horizontal-scroll-container .horizontal-scroll-item p {
+  margin-bottom: .2rem;
+}
+
+main .horizontal-scroll-container .horizontal-scroll-item span {
+  color: #30bdbd;
+  font-size: .6rem;
+}
+
+main .horizontal-scroll-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 8rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+main .horizontal-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+main .horizontal-scroll-container .horizontal-scroll-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  height: 100%;
+  width: 8rem;
+  background-color: #30bdbd;
+  margin-right: .5rem;
+  border-radius: .8rem;
+}
+
 main #landing {
   height: 70vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#30bdbd), to(rgba(0, 0, 0, 0.5)));
@@ -50,10 +121,50 @@ main #landing {
 
 main #landing h2 {
   font-size: 2.5rem;
+  line-height: 1;
 }
 
 main #landing p {
   font-size: .8rem;
+  margin-top: .5rem;
+}
+
+main #catalog {
+  padding: 1.2rem;
+}
+
+main #catalog .tourist, main #catalog .basics {
+  margin: 1rem 0;
+}
+
+main #catalog .tourist h3, main #catalog .basics h3 {
+  margin-bottom: 1rem;
+}
+
+main #catalog .basic-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(8rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+}
+
+main #catalog .basic-container .item {
+  height: 8rem;
+  margin: .2rem;
+}
+
+main #catalog .basic-container .hoodie {
+  background-image: url("../assets/smartmockups_kfhqf6oo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main #catalog .basic-container .mask {
+  background-image: url("../assets/smartmockups_kfhqhpxr.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 footer {
