@@ -91,6 +91,7 @@ main{
 
             @include tablets {
                 height: calc(90vh - 60px);
+                padding-bottom: 2rem;
             }
 
         h2{

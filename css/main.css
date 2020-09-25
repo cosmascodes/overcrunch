@@ -95,6 +95,7 @@ main #landing {
 @media (min-width: 692px) {
   main #landing {
     height: calc(90vh - 60px);
+    padding-bottom: 2rem;
   }
 }
 
