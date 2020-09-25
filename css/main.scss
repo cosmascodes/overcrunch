@@ -77,7 +77,7 @@ main{
                 width: 10rem;
                 background-color: $themeColor;
                 margin-right: 1rem;
-                border-radius: .8rem;
+                border-radius: 0 0 .8rem .8rem;
                 display: flex;
                 flex-direction: column;
                 overflow: hidden;
