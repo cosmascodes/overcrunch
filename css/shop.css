@@ -173,11 +173,11 @@ main #catalog .basic-container .item .price {
 }
 
 main #catalog .basic-container .item .price span {
-  font-size: .8rem;
+  font-size: .6rem;
 }
 
 main #catalog .basic-container .item .price p {
-  font-size: .6rem;
+  font-size: .4rem;
   color: #777;
 }
 
