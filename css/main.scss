@@ -156,6 +156,9 @@ main{
                 border-radius: 2rem;
                 border: transparent;
                 padding: .4rem 1rem;
+                @include tablets {
+                    border-radius: .4rem;
+                }
             }
         }
         p{
@@ -178,6 +181,9 @@ main{
                 border-radius: 2rem;
                 border: transparent;
                 padding: .4rem 1rem;
+                @include tablets {
+                    border-radius: .4rem;
+                }
             }
         }
         
@@ -197,6 +203,9 @@ main{
                 border-radius: 2rem;
                 border: transparent;
                 padding: .4rem 1rem;
+                @include tablets {
+                    border-radius: .4rem;
+                }
             }
         }
     }
@@ -213,6 +222,9 @@ main{
                 flex: 0 0 auto;
                 text-align: center;
                 margin: .5rem 0;
+                @include tablets {
+                    width: auto;
+                }
                 .img{
                     margin: 0 auto;
                     width: 84px;
