@@ -113,7 +113,7 @@ main #about, main #tours, main #destinations, main #team, main #contact {
 @media (min-width: 692px) {
   main #about, main #tours, main #destinations, main #team, main #contact {
     text-align: left;
-    padding: auto 2rem;
+    padding: .5rem 2rem;
   }
 }
 
@@ -166,12 +166,6 @@ main #about h2:hover::before, main #tours h2:hover::before, main #destinations h
 main #about .view-all, main #tours .view-all, main #destinations .view-all, main #team .view-all, main #contact .view-all {
   text-align: right;
   margin: 0;
-}
-
-@media (min-width: 692px) {
-  main #about {
-    padding: .5rem 1rem;
-  }
 }
 
 main #about .btn {

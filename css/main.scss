@@ -104,7 +104,7 @@ main{
         text-align: center;
         @include tablets {
             text-align: left;
-            padding: auto 2rem;
+            padding: .5rem 2rem;
         }
         h2{            
             margin: 1rem auto;
@@ -142,9 +142,6 @@ main{
         }
     }
     #about{
-        @include tablets {
-            padding: .5rem 1rem;
-        }
         .btn{
             display: flex;
             justify-content: flex-start;
