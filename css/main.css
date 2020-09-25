@@ -173,6 +173,12 @@ main #about h2, main #tours h2, main #destinations h2, main #team h2, main #cont
   position: relative;
 }
 
+@media (min-width: 692px) {
+  main #about h2, main #tours h2, main #destinations h2, main #team h2, main #contact h2 {
+    margin: .5rem 0;
+  }
+}
+
 main #about h2::before, main #tours h2::before, main #destinations h2::before, main #team h2::before, main #contact h2::before {
   position: absolute;
   width: 60%;
@@ -188,29 +194,6 @@ main #about h2::before, main #tours h2::before, main #destinations h2::before, m
   main #about h2::before, main #tours h2::before, main #destinations h2::before, main #team h2::before, main #contact h2::before {
     left: 0;
     bottom: 0;
-    -webkit-transform-origin: left;
-            transform-origin: left;
-    -webkit-transform: scale(0, 1);
-            transform: scale(0, 1);
-    -webkit-transition: -webkit-transform .3s ease-out;
-    transition: -webkit-transform .3s ease-out;
-    transition: transform .3s ease-out;
-    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
-  }
-}
-
-main #about h2:hover::before, main #tours h2:hover::before, main #destinations h2:hover::before, main #team h2:hover::before, main #contact h2:hover::before {
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-  -webkit-transition: -webkit-transform .3s ease-in;
-  transition: -webkit-transform .3s ease-in;
-  transition: transform .3s ease-in;
-  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
-}
-
-@media (min-width: 692px) {
-  main #about h2, main #tours h2, main #destinations h2, main #team h2, main #contact h2 {
-    margin: .5rem 0;
   }
 }
 
@@ -378,6 +361,12 @@ main #contact form {
           flex-direction: column;
 }
 
+@media (min-width: 692px) {
+  main #contact form {
+    width: 60%;
+  }
+}
+
 main #contact form input {
   margin: .5rem 0;
   padding: .5rem;
@@ -400,6 +389,12 @@ main #contact form input[type="submit"] {
   width: 50%;
 }
 
+@media (min-width: 692px) {
+  main #contact form input[type="submit"] {
+    width: 30%;
+  }
+}
+
 footer {
   text-align: center;
   padding: 1.2rem 1rem;
@@ -408,6 +403,12 @@ footer {
 footer img {
   width: 60%;
   margin-bottom: 1.2rem;
+}
+
+@media (min-width: 692px) {
+  footer img {
+    width: 30%;
+  }
 }
 
 footer .social-links img {
