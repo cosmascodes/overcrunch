@@ -50,12 +50,19 @@ main{
         padding: 1.2rem;
         p{
             font-size: .7rem;
+                @include tablets {
+                    font-size: .5rem;
+                }
         }
         .horizontal-scroll-container{
             display: flex;
             flex-wrap: nowrap;
             height: 12rem;
             overflow-x: auto;
+                @include tablets {
+                    height: 8.5rem;
+                    justify-content: space-evenly;
+                }
             -webkit-overflow-scrolling: touch;
             &::-webkit-scrollbar{
                 display:none;
@@ -65,6 +72,9 @@ main{
                 flex: 0 0 auto;
                 height: 100%;
                 width: 12rem;
+                    @include tablets {
+                        width: 8.5rem;
+                    }
                 border: 1px solid $themeColor;
                 margin-right: 1rem;
                 border-radius: .8rem;
@@ -78,10 +88,16 @@ main{
                 }
                 p{
                     margin-bottom: .2rem;
+                    @include tablets {
+                        margin-bottom: 0;
+                    }
                 }
                 span{
                     color: $themeColor;
                     font-size: .6rem;
+                    @include tablets {
+                        font-size: .5rem;
+                    }
                 }
             }                
         }
@@ -119,12 +135,33 @@ main{
         }
     }
     #intro{
+        display: flex;
+        flex-direction: column;
+            @include tablets {
+                flex-direction: row;
+                justify-content: space-between;
+            }
         article{
+            flex: .5;
+            margin-right: 2rem;
+            h2{
+                @include tablets {
+                    font-size: 1.25rem;
+                    line-height: 1.2;
+                    margin-bottom: .5rem;
+                }
+            }
             p{
                 margin-bottom: 1rem;
             }
         }
         aside{
+            flex: .5;
+            h3{
+                @include tablets {
+                    font-size: .7rem;
+                }
+            }
             p{
                 margin-bottom: 1rem;
             }
@@ -132,14 +169,32 @@ main{
     }
     #offices{
         .contact-wrapper{
+            position: relative;
             display: flex;
             flex-direction: column;
-            #googleMap{
-                height: 40vh;
-                background-image: linear-gradient(to bottom, $themeColor,rgba(0,0,0,.5));
-            }
+            background-image: linear-gradient(to bottom, $themeColor,rgba(0,0,0,.5));
+                @include tablets {
+                    flex-direction: row;
+                    justify-content: flex-end;
+                }
+                #googleMap{
+                    height: 450px;
+                    display: none;
+                    flex: 1;
+                        @include tablets {
+                            display: block;
+                        }
+                }
             aside{
-                margin-top: 1rem;
+                flex: 1;
+                background-color: #eee;
+                padding: 1rem;
+                @include tablets {
+                    position: absolute;
+                    width: 50%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
                 dl{
                     dt{
                         color: $themeColor;
@@ -149,6 +204,9 @@ main{
                     dd{
                         margin-bottom: 1rem;
                         font-size: .6rem;
+                            @include tablets {
+                                color: #fff;
+                            }
                     }
                 }
             }

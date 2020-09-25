@@ -37,7 +37,6 @@
             </div>
         </section>
         <section id="intro">
-            <div>
                 <article>
                     <h2>What's different about Overcrunch</h2>
                     <p>
@@ -60,7 +59,6 @@
                     <h3> <span>03</span> Our vision</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 </aside>
-            </div>
         </section>
         <section id="testimonials">
             <h2>What they've said</h2>
@@ -103,8 +101,8 @@
                         <dt>Phone Us</dt>
                         <dd>+(254)700222456 or +(254)797125863</dd>
                       </dl>
+                      <img src="../assets/email.png" alt='email logo'/>
                 </aside>
-                <img src="../assets/email.png" alt='email logo'/>
             </div>
         </section>
     </main>
@@ -114,5 +112,19 @@
     </footer>
     
     <script src="../js/typing.js" defer></script>
+
+
+    
+<script>
+    function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(51.508742,-0.120850),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBLKIC_NJoTatnBgNRieS1Y4WDmc6_46A&callback=myMap" defer></script>
 </body>
 </html>
