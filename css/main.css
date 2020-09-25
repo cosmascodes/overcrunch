@@ -90,6 +90,11 @@ main section .horizontal-scroll-container .horizontal-scroll-item {
   overflow: hidden;
 }
 
+main section .horizontal-scroll-container .horizontal-scroll-item img {
+  width: 100%;
+  height: 100%;
+}
+
 main section .horizontal-scroll-container .horizontal-scroll-item .tour-image {
   -webkit-box-flex: .82;
       -ms-flex: .82;
