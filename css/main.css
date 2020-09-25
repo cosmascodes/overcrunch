@@ -74,7 +74,7 @@ main section .horizontal-scroll-container .horizontal-scroll-item {
 
 main #landing {
   height: calc(100vh - 60px);
-  padding: 2rem 1rem;
+  padding: 21em 1rem 4rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,6 +142,10 @@ main #about .btn button {
   border-radius: 2rem;
   border: transparent;
   padding: .4rem 1rem;
+}
+
+main #about p {
+  margin-bottom: .5rem;
 }
 
 main #tours .btn {

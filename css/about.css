@@ -108,16 +108,15 @@ main #landing {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#30bdbd), to(rgba(0, 0, 0, 0.5)));
   background-image: linear-gradient(to bottom, #30bdbd, rgba(0, 0, 0, 0.5));
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: 20%;
 }
 
 main #landing div {
   height: 40%;
+}
+
+main #landing div h2 {
+  line-height: .8rem;
 }
 
 main #landing div p {
