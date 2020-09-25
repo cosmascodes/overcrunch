@@ -129,7 +129,15 @@ header{
             &::-webkit-scrollbar{
                 display: none;
             }
-            li,a{
+            a{
+                @include tablets {
+                    height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+            }
+            li{
                 @include mobile {                  
                     padding: 1rem 1.2em;
                     opacity: 0;
@@ -156,15 +164,10 @@ header{
                         transform: scale(0,1);
                         transition: transform .2s ease-out;
                     }
-                }
-                li{
-                    @include tablets {                        
-                    height: 100%;
-                        &:hover{
-                            &::before{
-                                transform: scale(1,1);
-                                transition: transform .2s ease-in .1s;
-                            }
+                    &:hover{
+                        &::before{
+                            transform: scale(1,1);
+                            transition: transform .2s ease-in .1s;
                         }
                     }
                 }
