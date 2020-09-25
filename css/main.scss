@@ -90,7 +90,7 @@ main{
         background-size: cover;
 
             @include tablets {
-                height: calc(70vh - 60px);
+                height: calc(90vh - 60px);
             }
 
         h2{
