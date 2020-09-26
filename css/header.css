@@ -73,6 +73,7 @@ header form {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: -1.2rem;
+    display: none;
   }
 }
 

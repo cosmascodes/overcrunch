@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main {
+  text-align: center;
+  padding: 60px 1.2rem 1.2px;
+}
+
+main h2 {
+  margin-top: .8rem;
+  font-weight: 200;
+  border-bottom: 1.5px solid #ddd;
+  padding: .5rem 0;
+}
+
+main section {
+  margin-top: .8rem;
+  display: -ms-grid;
+  display: grid;
+  padding-bottom: .8rem;
+  border-bottom: 1.5px solid #ddd;
+}
+
+@media (min-width: 692px) {
+  main section {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+main section .card {
+  margin: 1rem 0;
+  height: 260px;
+  background-color: #30bdbd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-radius: .4rem;
+}
+
+@media (min-width: 692px) {
+  main section .card {
+    margin: auto .5rem;
+  }
+}
+
+main section .card button {
+  margin: 1rem auto;
+  background-color: #fff;
+  border-style: solid;
+  border-color: #30bdbd;
+  padding: .4rem 1rem;
+  border-radius: .1rem;
+}
+/*# sourceMappingURL=admin.css.map */

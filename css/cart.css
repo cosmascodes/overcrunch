@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main {
+  padding-top: 60px;
+  min-height: 90vh;
+}
+
+main section {
+  padding: 3rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section table, main section tr {
+  border-bottom: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+main section table {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+main section table tr {
+  text-align: left;
+}
+
+main section table tr td {
+  padding: 1rem 0;
+}
+
+main section table tr #prod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section table tr #prod img {
+  width: 5rem;
+  height: auto;
+  margin-right: .5rem;
+}
+
+main section table tr #prod p {
+  font-size: .6rem;
+}
+
+main section table tr #prod span {
+  display: block;
+}
+
+main div {
+  text-align: center;
+}
+
+main div p {
+  font-size: .7rem;
+  line-height: 2;
+}
+
+main div p span {
+  margin-left: .8rem;
+  color: #555;
+}
+
+main button {
+  margin-top: 1rem;
+  padding: .6rem;
+  font-size: inherit;
+  background-color: #30bdbd;
+  color: #fff;
+  border: transparent;
+}
+
+footer {
+  font-size: .8rem;
+  text-align: center;
+}
+
+footer span {
+  display: block;
+}
+
+footer a {
+  color: #30bdbd;
+}
+/*# sourceMappingURL=cart.css.map */
