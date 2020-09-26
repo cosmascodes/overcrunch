@@ -50,6 +50,22 @@ main section table {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 692px) {
+  main section table .ms-hidden {
+    display: none;
+  }
+}
+
+main section table .mx-hidden {
+  display: block;
+}
+
+@media (min-width: 692px) {
+  main section table .mx-hidden {
+    display: none;
+  }
+}
+
 main section table tr {
   text-align: left;
 }

@@ -30,6 +30,8 @@
                 <tr class="title">
                   <th>Product</th>
                   <th>Price</th>
+                  <th class="ms-hidden">Quantity</th>
+                  <th class="ms-hidden">Total</th>
                 </tr>
                 <tr>
                   <td id="prod">
@@ -37,20 +39,20 @@
                     <p>
                         Prod_Name
                         <span>Color</span>
+                        <button class="ms-hidden" style="background-color: transparent;color: #30bdbd;border: 1px solid red;padding: .2rem .5rem;">Remove</button>
                     </p>
                   </td>
-                  <td>Ksh.100</td>
+                  <td id="price">
+                    Ksh.100
+                    <button class="mx-hidden" style="font-size: .5rem; background-color: transparent;color: #30bdbd;border: 1px solid #30bdbd;padding: .2rem .5rem;">Edit</button>
+                  </td>
+                  <td class="ms-hidden">
+                      <input type="number" value=1 style="font-size:.8rem;text-align: center;padding: .2rem 0;width: 30%;" name="quantity"/>
+                  </td>
+                  <td class="ms-hidden">
+                      Ksh100
+                  </td>
                 </tr>
-                <tr>
-                    <td id="prod">
-                      <img src="../../assets/smartmockups_kfhqhpxr.png" alt="product_name"/>
-                      <p>
-                          Prod_Name
-                          <span>Color</span>
-                      </p>
-                    </td>
-                    <td>Ksh.100</td>
-                  </tr>
               </table>
               <div>
                   <p>Subtotal <span>Ksh100</span> </p>

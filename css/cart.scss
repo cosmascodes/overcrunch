@@ -55,6 +55,17 @@ main{
         table{
             width: 100%;
             margin-bottom: 3rem;
+            .ms-hidden{
+                @include mobile {
+                    display: none;
+                }
+            }
+            .mx-hidden{
+                display: block;
+                @include tablets {
+                    display: none;
+                }
+            }
             tr{
                 text-align: left;
                 td{
