@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
 }
 
 body,html{
@@ -52,24 +53,60 @@ header{
     position: fixed;
     background-color: #fff;
     transition: background .3s ease-in;
-    @include tablets {
-        box-shadow: 0 0 25px -9px #ddd;
-    }
+    box-shadow: 0 0 25px -9px #ddd;
     img{
         height: 30%;
         @include tablets {
             height: 50%;
         }
     }
+    
+    form{
+        display: flex;
+        align-items: center;
+        @include mobile {
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            flex-direction: column;
+            margin-left: -1.2rem;
+            
+        }
+        @include tablets {
+            flex-direction: row;
+        }
+        input{
+            padding: .1rem;
+            margin: 0 .1rem;
+            @include mobile {
+                width: 60%;
+                margin-top: .5rem;
+            }
+        }
+        input[type="submit"]{
+            background-color: $themeColor;
+            color: #fff;
+            border-color: $themeColor;
+            border-style: solid;
+            padding: .1rem 1rem;
+            border-radius: .1rem;
+        }
+    }
     #menu-trigger{
         display: none;
         &:checked~nav{
+            z-index: 100;
             width: 100%;
             transition: width .3s ease-in;
             ul{
                 li{
                     opacity: 1;
                     transition: opacity .2s ease-in .3s;
+                }
+                #logout{
+                    background-color: rgba(255, 0, 0, 0.658);
+                    color: #fff;
+                    margin-top: 3rem;
                 }
             }
         }
@@ -102,13 +139,13 @@ header{
         }
     }
     nav{
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100vh;
         @include mobile {
             width: 0;
             background-color: rgba(0,0,0,.5);
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100vh;
         }
         transition: width .3s ease-in;
         overflow: hidden;
@@ -118,6 +155,7 @@ header{
                 top: 0;
                 height: 100%;
             }
+        
         ul{
             height: 100%;
             @include mobile {                
@@ -135,25 +173,39 @@ header{
             &::-webkit-scrollbar{
                 display: none;
             }
+            #logout{
+                @include tablets {
+                    color: #fff;
+                    background-color: rgba(255, 0, 0, 0.8);
+                    height: 50%;
+                    margin: auto .5rem;
+                    padding: .5rem .6rem;
+                    border-radius: .2rem;
+                }
+                &::before{
+                    transform: scale(0,0);
+                }
+            }
             a{
                 @include tablets {
                     height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
-                li{
-                    @include tablets {
-                        height: 100%;
-                    }
+            li{
+                @include tablets {
+                    height: 100%;
                 }
             }
+        }
             li{
                 @include mobile {                  
                     padding: 1rem 1.2em;
                     opacity: 0;
                     &:hover{
                         background-color: $themeColor;
+                        color: #fff;
                     }
                 }
                 @include tablets {
@@ -188,6 +240,7 @@ header{
         }
     }
     .menu-trigger-label{
+        z-index: 999;
         cursor: pointer;
         height: 100%;
         width: fit-content;
