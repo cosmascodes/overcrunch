@@ -73,6 +73,14 @@ main{
         width: 60%;
         display: flex;
         flex-direction: column;
+        @include mobile {
+            background-color: #fff;
+            width: 90%;
+            padding: 1.2rem;
+            margin: 1rem;
+            box-shadow: 0 0 25px -7px #ddd;
+            border-radius: .4rem;
+        }
             @include tablets {
                 width: 40%;
                 padding: 1.2rem;
@@ -84,6 +92,10 @@ main{
         input{
             margin: .5rem 0;
             padding: .2rem;
+                @include mobile {
+                    border-radius: .2rem;
+                    border: 1.5px solid #222;
+                }
         }
         #email{
             &:invalid{
@@ -93,7 +105,7 @@ main{
                 color: green;
             }
         }
-        #submit{
+        input[type="submit"]{
             background-color: $themeColor;
             border-style: solid;
             border-color: $themeColor;
