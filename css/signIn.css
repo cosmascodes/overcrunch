@@ -41,6 +41,23 @@ main {
           justify-content: center;
 }
 
+@media (max-width: 692px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 692px) {
+  main .mx-hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 692px) {
   main {
     -webkit-box-pack: end;

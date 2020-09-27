@@ -52,6 +52,16 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mobile {
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+    }
+    .mx-hidden{
+        @include tablets {
+            display: none;
+        }
+    }
         @include tablets {
             justify-content: flex-end;
         }

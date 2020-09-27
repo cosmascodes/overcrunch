@@ -60,22 +60,14 @@ header{
             height: 50%;
         }
     }
-    
+    .ms-hidden{
+        @include mobile {
+            display: none;
+        }
+    }
     form{
         display: flex;
         align-items: center;
-        @include mobile {
-            position: absolute;
-            width: 100%;
-            top: 100%;
-            flex-direction: column;
-            margin-left: -1.2rem;
-            display: none;
-            
-        }
-        @include tablets {
-            flex-direction: row;
-        }
         input{
             padding: .1rem;
             margin: 0 .1rem;
