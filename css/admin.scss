@@ -57,10 +57,24 @@ main{
             @include tablets {
                 grid-template-columns: repeat(3, 1fr);
             }
+            .users,.orders,.products{
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .users{
+                background-image: url('../assets/adminIcons/users.png');
+            }
+            .orders{
+                background-image: url('../assets/adminIcons/orders.png');
+            }
+            .products{
+                background-image: url('../assets/adminIcons/product.png');
+            }
         .card{
             margin: 1rem 0;
             height: 260px;
-            background-color: $themeColor;
+            background-color: hsl(0, 0%, 96%);
             display: flex;
             align-items: flex-end;
             border-radius: .4rem;
@@ -69,11 +83,13 @@ main{
             }
                 button{
                     margin: 1rem auto;
-                    background-color: #fff;
                     border-style: solid;
-                    border-color: $themeColor;
-                    padding: .4rem 1rem;
-                    border-radius: .1rem;
+                    border: transparent;
+                    background-color: $themeColor;
+                    color: whitesmoke;
+                    padding: .3rem 1rem;
+                    border-radius: 2rem;
+                    font-size: 20px;
                 }
         }
     }

@@ -53,6 +53,12 @@ main section img {
   margin: .5rem auto;
 }
 
+@media (min-width: 692px) {
+  main section img {
+    width: 30%;
+  }
+}
+
 main section form {
   margin-top: 1rem;
   display: -webkit-box;
@@ -62,6 +68,12 @@ main section form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (min-width: 692px) {
+  main section form {
+    width: 42%;
+  }
 }
 
 main section form h2 {
@@ -76,6 +88,12 @@ main section form label {
   font-size: .8rem;
 }
 
+@media (min-width: 692px) {
+  main section form label {
+    margin-top: 2rem;
+  }
+}
+
 main section form select {
   padding: .5rem 0;
   margin: .5rem 0;
@@ -84,5 +102,21 @@ main section form select {
 main section form input {
   padding: .5rem;
   margin: .2rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1.2rem 1rem;
+}
+
+footer .social-links img {
+  width: 25px;
+  margin: 0 .2rem 1.2rem;
+}
+
+footer span {
+  font-size: .6rem;
+  display: block;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=viewItem.css.map */

@@ -48,10 +48,28 @@ main section {
   }
 }
 
+main section .users, main section .orders, main section .products {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main section .users {
+  background-image: url("../assets/adminIcons/users.png");
+}
+
+main section .orders {
+  background-image: url("../assets/adminIcons/orders.png");
+}
+
+main section .products {
+  background-image: url("../assets/adminIcons/product.png");
+}
+
 main section .card {
   margin: 1rem 0;
   height: 260px;
-  background-color: #30bdbd;
+  background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,10 +87,12 @@ main section .card {
 
 main section .card button {
   margin: 1rem auto;
-  background-color: #fff;
   border-style: solid;
-  border-color: #30bdbd;
-  padding: .4rem 1rem;
-  border-radius: .1rem;
+  border: transparent;
+  background-color: #30bdbd;
+  color: whitesmoke;
+  padding: .3rem 1rem;
+  border-radius: 2rem;
+  font-size: 20px;
 }
 /*# sourceMappingURL=admin.css.map */
