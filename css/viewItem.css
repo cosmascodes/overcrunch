@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #30bdbd;
+}
+
+main {
+  padding-top: 60px;
+  text-align: center;
+}
+
+main section {
+  text-align: left;
+  padding: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 692px) {
+  main section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main section img {
+  width: 70%;
+  margin: .5rem auto;
+}
+
+main section form {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section form h2 {
+  font-size: .9rem;
+}
+
+main section form p {
+  font-size: .8rem;
+}
+
+main section form label {
+  font-size: .8rem;
+}
+
+main section form select {
+  padding: .5rem 0;
+  margin: .5rem 0;
+}
+
+main section form input {
+  padding: .5rem;
+  margin: .2rem 0;
+}
+/*# sourceMappingURL=viewItem.css.map */

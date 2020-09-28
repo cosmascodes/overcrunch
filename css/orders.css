@@ -28,41 +28,40 @@ a {
 
 main {
   padding-top: 60px;
+  min-height: 90vh;
 }
 
 main section {
   text-align: center;
-  padding: .8rem 1.2rem;
 }
 
-main section .item {
-  border-bottom: 2px solid #30bdbd;
+main section table {
+  min-width: 80%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-top: 1.5px solid #ddd;
   padding: .5rem 0;
-  margin-bottom: 1rem;
-}
-
-main section .item span {
-  color: #30bdbd;
-}
-
-main section .item p {
-  padding: .2rem 0;
-  font-size: .6rem;
-}
-
-main section .item .items {
-  border: 1px solid #ddd;
-}
-
-main section h2 {
-  font-size: 1rem;
-  padding: .5rem;
-  margin-bottom: 1rem;
   border-bottom: 1.5px solid #ddd;
+  margin: 1rem auto;
+  text-align: left;
 }
 
-main section h3 {
-  font-size: .9rem;
+main section table th {
+  font-size: .6rem;
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+}
+
+main section table tr, main section table td {
+  padding: .4rem 0;
+}
+
+main section table td {
+  font-size: .5rem;
+}
+
+main section table tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 footer {
@@ -80,4 +79,4 @@ footer span {
   display: block;
   line-height: 1.5;
 }
-/*# sourceMappingURL=userprofile.css.map */
+/*# sourceMappingURL=orders.css.map */

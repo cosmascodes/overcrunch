@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #30bdbd;
+}
+
+main {
+  min-height: 90vh;
+  padding-top: 60px;
+}
+
+main h2 {
+  font-size: .8rem;
+  margin: 1.2rem;
+  margin-bottom: 0;
+}
+
+@media (min-width: 692px) {
+  main h2 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+}
+
+main h2 span {
+  color: #30bdbd;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.2rem;
+}
+
+@media (min-width: 692px) {
+  main section {
+    padding-top: .5rem;
+  }
+}
+
+main section form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #30bdbd;
+  font-size: .8rem;
+}
+
+@media (min-width: 692px) {
+  main section form {
+    width: 50%;
+  }
+}
+
+main section form input {
+  font-size: .8rem;
+  padding: .5rem;
+  margin-bottom: .8rem;
+  border: 1.2px solid #000;
+  border-radius: .15rem;
+}
+
+@media (min-width: 692px) {
+  main section form input {
+    padding: .3rem;
+    font-size: .5rem;
+    margin-bottom: .3rem;
+  }
+}
+
+main section form #description {
+  height: 5rem;
+  padding: .5rem;
+  border-radius: .15rem;
+  margin-bottom: .8rem;
+  border: 1.2px solid #000;
+}
+
+@media (min-width: 692px) {
+  main section form #description {
+    height: 3rem;
+    margin-bottom: .3rem;
+  }
+}
+
+main section form input[type="file"] {
+  border: transparent;
+}
+
+main section form input[type="submit"] {
+  background-color: #30bdbd;
+  color: #fff;
+  padding: .5rem;
+  font-size: 1rem;
+  border: transparent;
+}
+
+@media (min-width: 692px) {
+  main section form input[type="submit"] {
+    padding: .2rem;
+    font-size: .8rem;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1.2rem 1rem;
+}
+
+footer .social-links img {
+  width: 25px;
+  margin: 0 .2rem 1.2rem;
+}
+
+footer span {
+  font-size: .6rem;
+  display: block;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=editprod.css.map */

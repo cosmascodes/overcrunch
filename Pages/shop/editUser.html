@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overcrunch | Admin - Best tours and travel agency in Kenya and East Africa</title>
+    <title>Overcrunch | Cart - Best tours and travel agency in Kenya and East Africa</title>
     <!-- LINKS -->
     <link rel="shortcut icon" href="../../assets/ico.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/header.css">
-    <link rel="stylesheet" href="../../css/orders.css">
+    <link rel="stylesheet" href="../../css/editprod.css">
 </head>
 <body>
     <header>
@@ -24,32 +24,25 @@
             <span></span>
         </label>
     </header>
-
     <main>
+        <h2>Edit: <span>User</span></h2>
         <section>
-            
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Order</th>
-                    <th>Total</th>
-                    <th>Payment Method</th>
-                    <th>Phone</th>
-                    <th>Town</th>
-                    <th>Created At</th>
-                </tr>
-                <tr>
-                    <td>Steve Austine</td>
-                    <td>iPhone 1</td>
-                    <td>27000</td>
-                    <td>Mpesa</td>
-                    <td>0795382241</td>
-                    <td>Bomet</td>
-                    <td>2020.09.26</td>
-                </tr>
-            </table>
+            <form>
+                <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                <label for="email">Details:</label>
+                    <input type="email" name="email" id="email">
+                <label for="password">Password:</label>
+                    <input type="password" name="password">
+                <label for="price">Confirm Password:</label>
+                    <input type="password" name="confirm-password">
+                <label for="role">Role:</label>
+                    <input type="text" name="role">
+                    <input type="submit" name="submit" value="Save">
+            </form>
         </section>
     </main>
+    
     <footer>
         <span>&copy; Copyright 2020 Overcrunch</span>
         <span>Designed with &hearts; at <a href="http://youngrammers.netlify.app">Youngrammers.Inc</a></span>

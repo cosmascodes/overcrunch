@@ -47,35 +47,66 @@ a{
 
 main{
     padding-top: 60px;
+    min-height: 90vh;
+    button{
+        padding: .3rem .6rem;
+        border: transparent;
+        border-radius: .2rem;
+        font-size: .6rem;
+    }
+    h2{
+        margin-top: .5rem;
+        font-size: 1rem;
+    }
+    #Add{
+        margin-bottom: .5rem;
+    }
+    .success{
+        background-color: $themeColor;
+        color: #fff;
+    }
+    .danger{
+        background-color: rgb(241, 68, 68);
+        color: #fff;
+    }
+    .blue{
+        background-color: rgb(89, 89, 255);
+        color: #fff;
+    }
     section{
         text-align: center;
-        padding: .8rem 1.2rem;
-        .item{
-            border-bottom: 2px solid $themeColor;
+        table{
+            min-width: 80%;
+            max-width: 100%;
+            border-collapse: collapse;
+            border-top: 1.5px solid #bbb;
             padding: .5rem 0;
-            margin-bottom: 1rem;
-            span{
-                color: $themeColor;
-            }
-            p{
-                padding: .2rem 0;
+            border-bottom: 1.5px solid #bbb;
+            margin: 0 auto;
+            text-align: left;
+            th{
                 font-size: .6rem;
+                height: 50px;
+                border-bottom: 1px solid #ddd;
             }
-            .items{
-                border: 1px solid #ddd;
+            tr,td{
+                padding: .4rem 0;
             }
-        }
-        h2{
-            font-size: 1rem;
-            padding: .5rem;
-            margin-bottom: 1rem;
-            border-bottom: 1.5px solid #ddd;
-        }
-        h3{
-            font-size: .9rem;
+            td{
+                font-size: .5rem;
+            }
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            button{
+                padding: .3rem;
+            }
         }
     }
 }
+
+
+
 footer{
     text-align: center;
     padding: 1.2rem 1rem;   
