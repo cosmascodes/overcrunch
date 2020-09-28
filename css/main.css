@@ -130,6 +130,7 @@ main section .horizontal-scroll-container .horizontal-scroll-item .tour-details 
 }
 
 main #landing {
+  height: calc(100vh - 60px);
   position: relative;
 }
 

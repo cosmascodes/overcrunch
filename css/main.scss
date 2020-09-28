@@ -111,6 +111,7 @@ main{
     }
     // Landing section
     #landing{
+        height: calc(100vh - 60px);
         position: relative;
         .mySlides{
             height: calc(100vh - 60px);
