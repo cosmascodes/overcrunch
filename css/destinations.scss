@@ -53,7 +53,10 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: linear-gradient(to bottom, $themeColor,rgba(0,0,0,.5));
+        background-image: linear-gradient(to bottom, $themeColor,rgba(0,0,0,.5)), url('../assets/carousel/road.jpg');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
         h2{
             font-size: 2rem;
             color: #fff;
