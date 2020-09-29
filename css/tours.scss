@@ -69,6 +69,63 @@ main{
             font-size: .8rem;
         }
     }
+    #gallery{
+        padding: 1.2rem;
+        div{
+            @include tablets {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .item{
+                margin: 1rem 0;
+                overflow: hidden;
+                height: 300px;
+                border-radius: .4rem;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                    @include mobile {
+                        box-shadow: 0 0 25px -7px #ccc;
+                    }
+                    @include tablets {
+                        margin: .4rem;
+                        border-radius: .2rem;
+                    }
+                img{
+                    width: 100%;
+                    height: 65%;
+                }
+                article{
+                    margin: .5rem;
+                        @include tablets {
+                            height: 150px;
+                            background-color: #fff;
+                            margin-top: -2rem;
+                            border-radius: .2rem;
+                            box-shadow: 0 0 25px -7px #ccc;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    h2,p{
+                        font-size: .5rem;
+                    }
+                    h2{
+                        font-size: .8rem;
+                        color: $themeColor;
+                    }
+                    button{
+                        padding: .2rem .5rem;
+                        background-color: $themeColor;
+                        color: #fff;
+                        border: transparent;
+                        border-radius: .2rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 footer{
