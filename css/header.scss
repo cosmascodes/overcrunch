@@ -54,10 +54,34 @@ header{
     background-color: #fff;
     transition: background .3s ease-in;
     box-shadow: 0 0 25px -9px #ddd;
+    
+    .mx-hidden{
+        @include tablets{
+            display: none;
+        }
+    }
+
     img{
         height: 30%;
         @include tablets {
             height: 50%;
+        }
+    }
+    div{
+        height: 30%;
+        display: flex;
+        @include tablets {
+            height: 45%;
+        }
+        h4{
+            margin-left: 1rem;
+            font-size: .7rem;
+        }
+        img{
+            height: 100%;
+            @include tablets {
+                height: 100%;
+            }
         }
     }
     .ms-hidden{

@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #30bdbd;
+}
+
+main {
+  min-height: 90vh;
+  padding-top: 70px;
+  text-align: center;
+}
+
+main button {
+  border: transparent;
+  border-radius: .2rem;
+}
+
+main form {
+  width: 50%;
+  margin: 1rem auto;
+}
+
+main form input {
+  padding: .2rem;
+  border: 1px solid black;
+  border-radius: .2rem;
+}
+
+main form input[type="submit"] {
+  padding: .4rem;
+  background-color: #30bdbd;
+  color: #fff;
+  border: transparent;
+  border-radius: .2rem;
+}
+
+@media (min-width: 692px) {
+  main form input[type="submit"] {
+    width: 30%;
+  }
+}
+
+main .carousel-gallery {
+  margin-top: .5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 0 1.2rem;
+}
+
+main .carousel-gallery div {
+  border: 1px solid #ccc;
+  margin: .2rem;
+  padding-bottom: .4rem;
+  border-radius: 0 0 .4rem .4rem;
+}
+
+main .carousel-gallery div button {
+  background-color: rgba(255, 0, 0, 0.781);
+  color: #fff;
+  padding: .4rem 1.2rem;
+}
+
+main .carousel-gallery div img {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 1.2rem 1rem;
+}
+
+footer .social-links img {
+  width: 25px;
+  margin: 0 .2rem 1.2rem;
+}
+
+footer span {
+  font-size: .6rem;
+  display: block;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=carousel.css.map */

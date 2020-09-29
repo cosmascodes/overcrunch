@@ -48,6 +48,11 @@ main{
         font-weight: 200;
         border-bottom: 1.5px solid #ddd;
         padding: .5rem 0;
+            @include tablets {
+                margin-top: .2rem;
+                font-size: .8rem;
+                font-weight: 600;
+            }
     }
     section{
         margin-top: .8rem;
@@ -55,31 +60,55 @@ main{
         padding-bottom: .8rem;
         border-bottom: 1.5px solid #ddd;
             @include tablets {
+                width: 75%;
+                margin: auto;
                 grid-template-columns: repeat(3, 1fr);
+                padding-top: .5rem;
             }
-            .users,.orders,.products{
-                background-size: contain;
-                background-repeat: no-repeat;
+            .users,.orders,.products,.carousel,.tours,.destinations{
                 background-position: center;
+                background-size: cover;
             }
             .users{
-                background-image: url('../assets/adminIcons/users.png');
+                background-image: linear-gradient(to bottom, rgba(0,0,0,.4),rgba(0,0,0,.9)), url('../assets/Shaba_Kenya_Tourist.jpg');    
             }
             .orders{
-                background-image: url('../assets/adminIcons/orders.png');
+                background-image: linear-gradient(to bottom, rgba(0,0,0,.4),rgba(0,0,0,.9)), url('../assets/happy-customers-c.jpg');
             }
             .products{
-                background-image: url('../assets/adminIcons/product.png');
+                background-image: linear-gradient(to bottom, rgba(0,0,0,.4),rgba(0,0,0,.9)), url('../assets/New-Products.jpg');
+            }
+            .carousel{
+                background-image: linear-gradient(to bottom, rgba(0,0,0,.4),rgba(0,0,0,.9)), url('../assets/carousel/schweiz.jpg');
+            }
+            .tours{
+                background-image: linear-gradient(to bottom, rgba(0,0,0,.4),rgba(0,0,0,.9)), url('../assets/longonot.jpg');
+            }
+            .destinations{
+                background-image: linear-gradient(to bottom, rgba(0,0,0,.4),rgba(0,0,0,.9)), url('../assets/lake_naivasha_boat_ride-YpBRzhgs.jpg');
             }
         .card{
             margin: 1rem 0;
-            height: 260px;
+            height: 250px;
             background-color: hsl(0, 0%, 96%);
             display: flex;
-            align-items: flex-end;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: column;
             border-radius: .4rem;
             @include tablets {
-                margin: auto .5rem;
+                margin: .2rem;
+            }
+            span{
+                background-color: rgba(0,0,0,.5);
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.2rem;
             }
                 button{
                     margin: 1rem auto;
@@ -90,6 +119,9 @@ main{
                     padding: .3rem 1rem;
                     border-radius: 2rem;
                     font-size: 20px;
+                    @include tablets {
+                        font-size: .5rem;
+                    }
                 }
         }
     }

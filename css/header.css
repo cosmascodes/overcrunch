@@ -44,6 +44,12 @@ header {
           box-shadow: 0 0 25px -9px #ddd;
 }
 
+@media (min-width: 692px) {
+  header .mx-hidden {
+    display: none;
+  }
+}
+
 header img {
   height: 30%;
 }
@@ -51,6 +57,34 @@ header img {
 @media (min-width: 692px) {
   header img {
     height: 50%;
+  }
+}
+
+header div {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 692px) {
+  header div {
+    height: 45%;
+  }
+}
+
+header div h4 {
+  margin-left: 1rem;
+  font-size: .7rem;
+}
+
+header div img {
+  height: 100%;
+}
+
+@media (min-width: 692px) {
+  header div img {
+    height: 100%;
   }
 }
 

@@ -33,6 +33,14 @@ main h2 {
   padding: .5rem 0;
 }
 
+@media (min-width: 692px) {
+  main h2 {
+    margin-top: .2rem;
+    font-size: .8rem;
+    font-weight: 600;
+  }
+}
+
 main section {
   margin-top: .8rem;
   display: -ms-grid;
@@ -43,46 +51,91 @@ main section {
 
 @media (min-width: 692px) {
   main section {
+    width: 75%;
+    margin: auto;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    padding-top: .5rem;
   }
 }
 
-main section .users, main section .orders, main section .products {
-  background-size: contain;
-  background-repeat: no-repeat;
+main section .users, main section .orders, main section .products, main section .carousel, main section .tours, main section .destinations {
   background-position: center;
+  background-size: cover;
 }
 
 main section .users {
-  background-image: url("../assets/adminIcons/users.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.9))), url("../assets/Shaba_Kenya_Tourist.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("../assets/Shaba_Kenya_Tourist.jpg");
 }
 
 main section .orders {
-  background-image: url("../assets/adminIcons/orders.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.9))), url("../assets/happy-customers-c.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("../assets/happy-customers-c.jpg");
 }
 
 main section .products {
-  background-image: url("../assets/adminIcons/product.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.9))), url("../assets/New-Products.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("../assets/New-Products.jpg");
+}
+
+main section .carousel {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.9))), url("../assets/carousel/schweiz.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("../assets/carousel/schweiz.jpg");
+}
+
+main section .tours {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.9))), url("../assets/longonot.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("../assets/longonot.jpg");
+}
+
+main section .destinations {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.9))), url("../assets/lake_naivasha_boat_ride-YpBRzhgs.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("../assets/lake_naivasha_boat_ride-YpBRzhgs.jpg");
 }
 
 main section .card {
   margin: 1rem 0;
-  height: 260px;
+  height: 250px;
   background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: .4rem;
 }
 
 @media (min-width: 692px) {
   main section .card {
-    margin: auto .5rem;
+    margin: .2rem;
   }
+}
+
+main section .card span {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
 }
 
 main section .card button {
@@ -94,5 +147,11 @@ main section .card button {
   padding: .3rem 1rem;
   border-radius: 2rem;
   font-size: 20px;
+}
+
+@media (min-width: 692px) {
+  main section .card button {
+    font-size: .5rem;
+  }
 }
 /*# sourceMappingURL=admin.css.map */

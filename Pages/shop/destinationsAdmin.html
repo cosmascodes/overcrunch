@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overcrunch | Admin - Best tours and travel agency in Kenya and East Africa</title>
+    <!-- LINKS -->
+    <link rel="shortcut icon" href="../../assets/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/destinationsAdmin.css">
+</head>
+<body>
+    <header>
+        <img src="../../assets/logo.PNG" alt="overcrunch logo">
+        <input type="checkbox" id="menu-trigger">
+        <nav>
+            <ul class="links">
+                <li>Orders</li>
+                <li>Product</li>
+                <li>Users</li>
+            </ul>
+        </nav>
+        <label class="menu-trigger-label" for="menu-trigger">
+            <span></span>
+        </label>
+    </header>
+    <main id="tours">
+        <form>
+            <h2>Destinations</h2>
+            <label for="image">Picture:</label>
+            <input type="file" name="image" id="image">
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title">
+            <label for="description">Description:</label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            <label for="cost">Cost:</label>
+            <input type="text" name="cost" id="cost">
+            <input type="submit" name="submit" value="SAVE">
+        </form>
+        <div class="gallery-container">
+            <div class="tour">
+                <img src="../../assets/taita-hills-camping-kenya-58.jpg" alt="taita">
+                <p style="margin-left: .5rem; font-size: 14px;line-height: 1;">Title</p>
+                <button>Delete</button>
+            </div>
+            <div class="tour">
+                <img src="../../assets/taita-hills-camping-kenya-58.jpg" alt="taita">
+                <p style="margin-left: .5rem; font-size: 14px;line-height: 1;">Title</p>
+                <button>Delete</button>
+            </div>
+            <div class="tour">
+                <img src="../../assets/taita-hills-camping-kenya-58.jpg" alt="taita">
+                <p style="margin-left: .5rem; font-size: 14px;line-height: 1;">Title</p>
+                <button>Delete</button>
+            </div>
+            <div class="tour">
+                <img src="../../assets/taita-hills-camping-kenya-58.jpg" alt="taita">
+                <p style="margin-left: .5rem; font-size: 14px;line-height: 1;">Title</p>
+                <button>Delete</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>&copy; Copyright 2020 Overcrunch</span>
+        <span>Designed with &hearts; at <a href="http://youngrammers.netlify.app">Youngrammers.Inc</a></span>
+    </footer>
+</body>
+</html>
