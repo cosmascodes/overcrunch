@@ -8,6 +8,21 @@
     <link rel="shortcut icon" href="./assets/ico.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_QFpmENyyNkIl0U3cd5jub");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+               emailjs.sendForm('cosmascodes();', 'cosmascodes', this);
+            });
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -138,7 +153,7 @@
             <h2>Contact Us</h2>
             <p>Want to book travel somewhere? Check out our <a href="#">booking system.</a></p>
             <p>We'd also love to here from you. If you have any inquiries leave us a message below. We'll get back as soon.</p>
-            <form>
+            <form id="contact-form">
                 <input type="text" name="user_name" id="user_name" placeholder="Enter Your Name" required/>
                 <input type="tel" name="user_phone" id="user_phone" placeholder="Phone Number"/>
                 <input type="email" name="user_email" id="user_email" placeholder="Enter Your Email" required/>
@@ -160,5 +175,6 @@
     
 
     <script src="./js/carousel.js" defer></script>
+    
 </body>
 </html>

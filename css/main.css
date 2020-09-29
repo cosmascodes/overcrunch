@@ -59,6 +59,7 @@ main section .horizontal-scroll-container::-webkit-scrollbar {
 
 @media (min-width: 692px) {
   main section .horizontal-scroll-container {
+    height: auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: space-evenly;

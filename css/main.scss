@@ -67,6 +67,7 @@ main{
                 display:none;
             }
                 @include tablets {
+                    height: auto;
                    flex-wrap: wrap;
                    justify-content: space-evenly;
                 }
