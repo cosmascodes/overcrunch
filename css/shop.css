@@ -190,15 +190,7 @@ main #catalog .basic-container .item {
 }
 
 main #catalog .basic-container .item .image {
-  -webkit-box-flex: 8;
-      -ms-flex: 8;
-          flex: 8;
-}
-
-main #catalog .basic-container .item .price {
-  -webkit-box-flex: .2;
-      -ms-flex: .2;
-          flex: .2;
+  height: 80%;
 }
 
 main #catalog .basic-container .item .price span {

@@ -148,10 +148,9 @@ main{
                 display: flex;
                 flex-direction: column;
                 .image{
-                    flex: 8;
+                    height: 80%;
                 }
                 .price{
-                    flex: .2;
                     span{
                         font-size: .6rem;
                     }
