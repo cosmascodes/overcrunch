@@ -86,7 +86,7 @@ main{
                 display: flex;
                 flex-direction: column;
                     @include mobile {
-                        box-shadow: 0 0 25px -7px #eee;
+                        box-shadow: 0 0 25px -7px #ccc;
                     }
                     @include tablets {
                         margin: .4rem;
