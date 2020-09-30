@@ -75,5 +75,12 @@
         <span>&copy; Copyright 2020 Overcrunch</span>
         <span>Designed with &hearts; at <a href="#">Youngrammers.Inc</a></span>
     </footer>
+    <script>
+        document.getElementsByClassName('links').addEventListener('click',()=>{
+            if (document.getElementById("menu-trigger").checked === true) {
+                document.getElementById("menu-trigger").checked = false;                
+            }
+        })
+    </script>
 </body>
 </html>

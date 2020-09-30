@@ -123,7 +123,13 @@
     var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
     }
     </script>
-    
+    <script>
+        document.getElementsByClassName('links').addEventListener('click',()=>{
+            if (document.getElementById("menu-trigger").checked === true) {
+                document.getElementById("menu-trigger").checked = false;                
+            }
+        })
+    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBLKIC_NJoTatnBgNRieS1Y4WDmc6_46A&callback=myMap" defer></script>
 </body>
 </html>
