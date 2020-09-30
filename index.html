@@ -32,12 +32,12 @@
         <input type="checkbox" id="menu-trigger">
         <nav>
             <ul class="links">
-                <li data-section="landing" class="active">Home</li>
-                <li data-section="about">About Us</li>
-                <li data-section="tours">Tours & Travel</li>
-                <li data-section="destinations">Destinations</li>
+                <a href="/index.html"><li data-section="landing">Home</li></a>
+                <a href="./Pages/about.html"><li data-section="about">About Us</li></a>
+                <a href="./Pages/tours.html"><li data-section="tours" class="active">Tours & Travel</li></a>
+                <a href="./Pages/destinations.html"><li data-section="destinations">Destinations</li></a>
                 <a href="./Pages/shop.html"><li data-section="shop">Shop</li></a>
-                <li data-section="contact">Contact Us</li>
+                <li data-section="contact" id="contact-btn">Contact Us</li>
             </ul>
         </nav>
         <label class="menu-trigger-label" for="menu-trigger">
@@ -177,5 +177,10 @@
     
 
     <script src="./js/carousel.js" defer></script>
+    <script>
+        let contact = document.getElementById('contact-btn').addEventListener('click', ()=>{
+            document.getElementById('contact').scrollIntoView({behavior:"smooth"})
+        })
+    </script>
 </body>
 </html>

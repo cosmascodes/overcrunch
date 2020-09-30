@@ -420,8 +420,8 @@ main #contact form .bubbly-button {
   transition: -webkit-transform ease-in 0.1s, -webkit-box-shadow ease-in 0.25s;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s, -webkit-transform ease-in 0.1s, -webkit-box-shadow ease-in 0.25s;
-  -webkit-box-shadow: 0 2px 25px #388d8d;
-          box-shadow: 0 2px 25px #388d8d;
+  -webkit-box-shadow: 0 2px 25px -10px #388d8d;
+          box-shadow: 0 2px 25px -10px #388d8d;
 }
 
 main #contact form .bubbly-button:focus {
