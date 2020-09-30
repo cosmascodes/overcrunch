@@ -39,21 +39,25 @@
                 </tr>
                 <tr>
                   <td id="prod">
-                    <img src="../../assets/smartmockups_kfhqhpxr.png" alt="product_name"/>
                     <p>
                         Prod_Name
                         <span>Color</span>
-                        <button class="ms-hidden" style="background-color: transparent;color: #30bdbd;border: 1px solid red;padding: .2rem .5rem;">Remove</button>
+                        <button id="remove" class="ms-hidden" style="background-color: transparent;color: #30bdbd;border: 1px solid red;padding: .2rem .5rem;">Remove</button>
                     </p>
                   </td>
                   <td id="price">
                     Ksh.100
-                    <button class="mx-hidden" style="font-size: .8rem; background-color: transparent;color: #30bdbd;border: 1px solid #30bdbd;padding: .2rem .5rem;">Edit</button>
+                    <div id="show" style="text-align: left;">
+                        <button style="background-color: #FF0000;color: #fff;border: transparent;">-</button>
+                        <span>1</span>
+                        <button style="background-color: #30bdbd;color: #fff;border: transparent;">+</button>
+                    </div>
+                    <button class="mx-hidden" id="btn-edit" style="font-size: .8rem; background-color: transparent;color: #30bdbd;border: 1px solid #30bdbd;padding: .2rem .5rem;">Edit</button>
                   </td>
                   <td class="ms-hidden">
-                      <button>-</button>
+                      <button style="background-color: #FF0000;color: #fff;border: transparent;">-</button>
                       <span>1</span>
-                      <button>+</button>
+                      <button style="background-color: #30bdbd;color: #fff;border: transparent;">+</button>
                   </td>
                   <td class="ms-hidden">
                       Ksh100
@@ -64,12 +68,27 @@
                   <p>Subtotal <span>Ksh100</span> </p>
                   <p>Tax included and shipping calculated at checkout</p>
               </div>
-              <button>CHECK OUT</button>
+              <button id="checkout">CHECK OUT</button>
         </section>
     </main>
     <footer>
         <span>&copy; Copyright 2020 Overcrunch</span>
         <span>Designed with &hearts; at <a href="http://youngrammers.netlify.app">Youngrammers.Inc</a></span>
     </footer>
+
+    <script>
+        document.getElementById('btn-edit').addEventListener('click', ()=>{
+            if (document.getElementById('show').style.display!=="block") {
+                document.getElementById('show').style.display="block"
+            } else {
+                document.getElementById('show').style.display="none"
+            }
+            if (document.getElementById('remove').style.display!=="block") {
+                document.getElementById('remove').style.display="block"
+            } else {
+                document.getElementById('remove').style.display="none"
+            }
+        })
+    </script>
 </body>
 </html>

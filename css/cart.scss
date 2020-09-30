@@ -44,15 +44,19 @@ main{
     padding-top: 60px;
     min-height: 90vh;
     section{
-        padding: 3rem 1rem;
+        padding: 1rem 1.2rem;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        @include tablets {
+            align-items: flex-end;
+        }
         table, tr{
             border-bottom: 1px solid #ddd;
             border-collapse: collapse;
         }
         table{
+            padding: 0;
             width: 100%;
             margin-bottom: 3rem;
             .ms-hidden{
@@ -68,16 +72,15 @@ main{
             }
             tr{
                 text-align: left;
+                font-size: .6rem;
                 td{
-                    padding: 1rem 0;
+                    padding: .1rem;
+                    #show{
+                        display: none;
+                    }
                 }
                 #prod{
                     display: flex;
-                    img{
-                        width: 5rem;
-                        height: auto;
-                        margin-right: .5rem;
-                    }
                     p{
                         font-size: .6rem;
                     }
@@ -90,6 +93,9 @@ main{
     }
     div{
         text-align: center;
+        @include tablets {
+            text-align: right;
+        }
         p{
             font-size: .7rem;
             line-height: 2;
@@ -101,15 +107,22 @@ main{
     }
     button{
         margin-top: 1rem;
-        padding: .6rem;
+        padding: .2rem .6rem;
         font-size: inherit;
         background-color: $themeColor;
         color: #fff;
         border: transparent;
     }
+    #checkout{
+        padding: .5rem;
+        @include tablets {
+            font-size: 17px;
+            width: 40%;
+        }
+    }
 }
 footer{
-    font-size: .8rem;
+    font-size: .6rem;
     text-align: center;
     span{
         display: block;
