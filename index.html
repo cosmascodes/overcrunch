@@ -17,6 +17,10 @@
     </script>
     <script type="text/javascript">
         window.onload = function() {
+            if (document.getElementById("menu-trigger").checked === true) {
+                document.getElementById("menu-trigger").checked = false;                
+            }
+            document.getElementById("menu-trigger").checked = false;
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
                emailjs.sendForm('cosmascodes();', 'cosmascodes', this);
