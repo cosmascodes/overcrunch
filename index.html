@@ -17,9 +17,6 @@
     </script>
     <script type="text/javascript">
         window.onload = function() {
-            if (document.getElementById("menu-trigger").checked === true) {
-                document.getElementById("menu-trigger").checked = false;                
-            }
             document.getElementById("menu-trigger").checked = false;
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
@@ -184,6 +181,13 @@
     <script>
         let contact = document.getElementById('contact-btn').addEventListener('click', ()=>{
             document.getElementById('contact').scrollIntoView({behavior:"smooth"})
+        })
+    </script>
+    <script>
+        document.getElementsByClassName('links').addEventListener('click',()=>{
+            if (document.getElementById("menu-trigger").checked === true) {
+                document.getElementById("menu-trigger").checked = false;                
+            }
         })
     </script>
 </body>
