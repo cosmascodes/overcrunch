@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #30bdbd;
+}
+
+main {
+  padding-top: 60px;
+  min-height: 90vh;
+}
+
+@media (min-width: 692px) {
+  main section {
+    padding: 0 1.2rem;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1.2rem 1rem;
+}
+
+footer span {
+  display: block;
+  font-size: .6rem;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=@tour.css.map */
